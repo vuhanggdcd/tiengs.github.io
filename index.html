@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>English Trung Hoc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 480px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 4px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+</style>
+</head>
+<body>
+<!--(1) menu den -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="/">English 6-7-8-9-10</a>
+</nav>
+<div class="container" style="margin-top:30px">
+  <div class="dropdown">
+    <h4 text-align: center;><button onclick="myFunction()" class="dropbtn">Chọn Lớp</button></h4>
+    <div id="myDropdown" class="dropdown-content">
+      <a onclick="getLop06()">Lớp 6</a>
+      <a onclick="getLop07()">Lớp 7</a>
+      <a onclick="getLop08()">Lớp 8</a>
+      <a onclick="getLop09()">Lớp 9</a>
+      <a onclick="getLop10()">Lớp 10</a>
+      <a onclick="getLop11()">Lớp 11</a>
+      <a onclick="getLop12()">Lớp 12</a>
+    </div>
+  </div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/* Khi chon 1 bai hoc thi Bai chon cua id baidacChon se thay doi */
+
+</script>
+
+<script>
+var bklop=0;  
+/* bien toan cuc ben enbreaking now  khong xai
+var bchon="/eng-breaking/mp3/",bchon1="L01/",bchon2="m01.mp3";
+var bxemc="/eng-breaking/pdf/",bxemc1="text-01-",bxemc2="-0102.pdf";
+*/
+function getLop06() {
+  document.getElementById("lopchon").innerHTML="Tiếng Anh 6";
+  bklop=6;
+}
+function getLop07() {
+  document.getElementById("lopchon").innerHTML="Tiếng Anh 7";
+  bklop=7;
+}
+function getLop08() {
+  document.getElementById("lopchon").innerHTML="Tiếng Anh 8";
+  bklop=8;
+}
+function getLop09() {
+  document.getElementById("lopchon").innerHTML="Tiếng Anh 9";
+  bklop=9;
+}
+function getLop10() {
+  document.getElementById("lopchon").innerHTML="Tiếng Anh 10";
+  bklop=10;
+}
+function getLop11() {
+  document.getElementById("lopchon").innerHTML="Tiếng Anh 11";
+  bklop=11;
+}
+function getLop12() {
+  document.getElementById("lopchon").innerHTML="Tiếng Anh 12";
+  bklop=12;
+}
+
+
+
+function getmBai01() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 1 - MY NEW SCHOOL";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/10bjJrggLBqMbNIZ_qiz62thSt7vb1zg5/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 1 - MY HOBBIES";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/12J5eqUHtlnJeXZVoBXYfFzHmn5KuprMA/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 1";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1n7aiHIlY738vKS4W2hUlZRCcpj9tftEq/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 1 - LOCAL ENVIRONMENT";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1qJDdbRWPTBUid8xtf-9Ca1LNrJqWP4NM/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 1 - FAMILY LIFE";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1IpP59-V36tJ3AVyuqB07hprMj-ilgJPx/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+
+function getmBai02() {
+  switch(bklop) {
+  case 6:
+  document.getElementById("baimchon").innerHTML="Unit 2 - MY HOME";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1cDgP9V0OXlamutgDuIIu2ilgUZq63_jz/view?usp=sharing";
+    break;
+  case 7:
+  document.getElementById("baimchon").innerHTML="Unit 2 - HEALTH";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1t2hCC_KWie4i1tZ-pog2MMfp177VsfPG/view?usp=sharing";
+    break;
+  case 8:
+  document.getElementById("baimchon").innerHTML="Unit 2 - LIFE IN THE COUNTRYSIDE";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1BcZ8CGbK45_1SvyD1HGk-6GcLVG9rSPX/view?usp=sharing";
+    break;
+  case 9:
+  document.getElementById("baimchon").innerHTML="Unit 2 - CITY LIFE";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1WsLiU2l9gZAfWcdA-QGkrrYK6ii6Jljg/view?usp=sharing";
+    break;
+  case 10:
+  document.getElementById("baimchon").innerHTML="Unit 2 - YOUR BODY AND YOU";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1xL97N6GkCmtlPV61Q8kq7QGKmGHCnaTR/view?usp=sharing";
+    break;
+  case 11:
+  document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+  document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai03() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 3 - MY FRIENDS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1eAcHsx-OAuD21v1dtNMKz9a2EQam_r7p/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 3 - COMMUNITY SERVICE";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/19cWKsAQuc3Uf0scOwEgMAEiQqRhoQ3zz/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 3 - PEOPLES OF VIET NAM";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1isBexwhY7ft7S6-AlRp5JWFb9d3hyOEI/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 3 - TEEN STRESS AND PRESSURE";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1cDYnZCPpEm0sG1voUMNyRf_QOHNrqqIK/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 3 - MUSIC";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1tzVW5tVxHtYQRavGCsz_G4ARSkaRkUmp/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai04() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 4 - MY NEIGHBOURHOOD";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1OQKCraQVNV0FbafriZVCzfXuNtpxBeC9/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 4 - MUSIC AND ARTS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1DQlt_US4iK4Uw5Plejgy-2-wUOCdhK18/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 4 - OUR CUSTOMS AND TRADITIONS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1U5MO3HoIUn3BP-Lt_ZBnhsqTGIuG6fd_/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 4 - LIFE IN THE PAST";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1xEblpKZRZ9h32SJjbpgEL88UxMg1s3hD/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 4 - FOR A BETTER COMMUNITY";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1R4nfAnbf3PQJmPKhw3UdnTS7Lz6iUBjv/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai05() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 5 - Natural Wonders Of The World";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1ccjKjN7eAAomo8jBGwMZTVrMcrAg4yHe/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 5 - VIETNAMESE FOOD AND DRINK";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1PVfRx9kc6XnYTBAmRS05w-hFI8U8ukEb/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 5 - FESTIVALS IN VIET NAM";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1GLKd-D3jWjFl1SnfT7l54re6gmOi5NER/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 5 - WONDERS OF VIET NAM";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1YJIGBornunPnuvulu58oftxAQqyBu_OI/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 5 - INVENTIONS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1rX2kkD-j1baFxDGBIFqAz9Xot43zmloy/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai06() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 6 - OUR TET HOLIDAY";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1F3dLpDgwN-iAuoNXzoj6t6iIuXK7zblN/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 6 - THE FIRST UNIVERSITY IN VIETNAM";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1jRkEwmBX3xZ87K-Bgis2uXQB9v8zLZt2/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 6 - FOLK TALES";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/102HYmoh_qAOwnIiiwVxGTpYLbXCbPWOA/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 6 - VIET NAM THEN AND NOW";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1tYGFhshom6j8eHzneiZGfUWKXka1MD9y/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 6 - GENDER EQUALITY";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1UWK0f3LPteD84ui_QOV3R0Ere-BPdO9j/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai07() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 7 - TELEVISION";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/12rOXHY06v_6RBXqSh97BSSUlJL2cYdpM/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 7 - TRAFFIC";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/16eBSA1ArJwOiayOxqM9DZW6h4BeHdYrc/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 7 - POLLUTION";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1ojQR_xouRTp5e9YwUvrGBxMBCPNXGPdh/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 7 - RECIPES AND EATING HABITS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1GK2Mq1cL0-v57nAgPYPeejdOuEaof1Er/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 7 -  CULTURAL DIVERSITY ";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1kX-bakyADu3Q8TgvMNsMK9zLGsQ-pim6/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai08() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 8 - SPORTS AND GAMES";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1FTtfRPqwUWbj4UYDvu-4_tdHOLQ12LoB/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 8 - FILMS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1QoiF-n-4HUQresRTd6PjpGFQ__8sukJk/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 8 - ENGLISH SPEAKING COUNTRIES";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1F992_DJgGjvbxPsVB1__yHdBV_IQp_5O/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 8 - TOURISM";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/18riYTGpm8_0frwXnw8OaRH0uxYQgwnly/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 8 - NEW WAYS TO LEARN";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1zmtJoJrKhPj1NdsrgKFVyHWu1FWTcl-z/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai09() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 9 - CITIES OF THE WORLD";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/14qUJWDS-8k3yxD9J8v-i-O5h6qE3MroR/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 9 - FESTIVALS AROUND THE WORLD";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1lfjTe1heycANuAkxGVKnkeFv3qF0F5mc/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 9 - NATURAL DISASTERS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1LKiwZmP1KTMpgvUjv39npdb9nERDPUHd/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 9 - ENGLISH IN THE WORLD";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1hOZhQimNtxwPROtnAZovvm2ooIh3tU7Z/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 9 - PRESERVING THE ENVIRONMENT ";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/19GhjEmztcgpfLsPGVn7O50cHXdoa84-c/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai10() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 10 - OUR HOUSES IN THE FUTURE";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1UaaCSFim1PcMk6UGyXHCPLb-wTTr8wu_/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 10 - SOURCES OF THE ENERGY";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1OhVsLemxV1WafO6FCvXyx0iJu0iG4ZRf/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 10 - COMMUNICATION";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1TNyklQHX_TocCbjpsk4i4WZ4jX1voki2/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 10 - SPACE TRAVEL";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/18Ihall81UbDq_8t-EejHAUdLKc5NU9ZM/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="Unit 10 - ECOTOURISM";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1vcGB-ViG6N-8lO8XrbMVoDbkckyj0Wag/view?usp=sharing";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai11() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 11 - OUR GREENER WORLD";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1L6pDx6prs8NJXpXZe453ziyDmX-gRJtz/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 11 - TRAVELLING IN THE FUTURE";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1_YUNzNcwijobg1D9OTQ-ag2Nlaeo2X6n/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 11 - SCIENCE AND TECHNOLOGY";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1JDNBU4-hCIyMbnQq4Qcddot2ICYlDTcD/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 11 - CHANGING ROLES IN SOCIETY";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1_pYVnQpr3IN3VlrL9qfCan3WRuhuUmOX/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+function getmBai12() {
+  switch(bklop) {
+  case 6:
+    document.getElementById("baimchon").innerHTML="Unit 12 - ROBOTS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1oSGwAvYsHz2AHCMN_cjazUB0qcoaeV5P/view?usp=sharing";
+    break;
+  case 7:
+    document.getElementById("baimchon").innerHTML="Unit 12 - AN OVER CROWDED WORLD";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1WoGsFaajuB1UpV3WOoUA8DopSfI-KS6S/view?usp=sharing";
+    break;
+  case 8:
+    document.getElementById("baimchon").innerHTML="Unit 12 - LIFE ON OTHER PLANETS";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1ySZW6ZWPD-4A5HU996mLRDDsuktZwEm5/view?usp=sharing";
+    break;
+  case 9:
+    document.getElementById("baimchon").innerHTML="Unit 12 - MY FUTURE CAREER";
+    document.getElementById("baixem").href="https://drive.google.com/file/d/1RmH4bnegHK4Py6DTSMurTUB5fhAhpznH/view?usp=sharing";
+    break;
+  case 10:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  case 11:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  default:
+    document.getElementById("baimchon").innerHTML="";
+    document.getElementById("baixem").href="";
+    break;
+  }    
+}
+
+</script>
+<h4 id="lopchon" style="color:Green;">...</h4>
+<div class="dropdown">
+ <button onclick="myFunctions()" class="dropbtn">Chọn Bài học</button>
+  <div id="myDropdowns" class="dropdown-content">
+    <a onclick="getmBai01()">Unit 1</a>
+    <a onclick="getmBai02()">Unit 2</a>
+    <a onclick="getmBai03()">Unit 3</a>
+    <a onclick="getmBai04()">Unit 4</a>
+    <a onclick="getmBai05()">Unit 5</a>
+    <a onclick="getmBai06()">Unit 6</a>
+    <a onclick="getmBai07()">Unit 7</a>
+    <a onclick="getmBai08()">Unit 8</a>
+    <a onclick="getmBai09()">Unit 9</a>
+    <a onclick="getmBai10()">Unit 10</a>
+    <a onclick="getmBai11()">Unit 11</a>
+    <a onclick="getmBai12()">Unit 12</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctions() {
+  document.getElementById("myDropdowns").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+
+<h5 id="baimchon" style="color:Green;">...</h5>
+
+<table>
+  <tr>
+    <th><a controls id="baixem" href ="">
+    Xem Video Mp4 của Bài học
+    </a></th>
+  </tr>
+</table>
+
+<br>
+
+<br>
+<br>
+
+	</div>
+  
+  </div>
+</div>
+<br>
+<br>
+
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Website này do vantiensg2002@yahoo.com lập ngày 20/11/2020 chỉ để học tiếng Anh.</p>
+ </div>
+
+</body>
+</html>
+
